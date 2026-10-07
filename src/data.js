@@ -1,0 +1,53 @@
+export const categories = ["Culture", "Trekking", "Adventure", "Wildlife", "Spiritual", "Luxury", "Nature"];
+export const theme = {
+  Culture: ["#b45309", "#f59e0b", "🏯"], Trekking: ["#0f766e", "#5eead4", "🥾"], Adventure: ["#be123c", "#fb7185", "🪂"],
+  Wildlife: ["#3f6212", "#a3e635", "🐅"], Spiritual: ["#6d28d9", "#c4b5fd", "🕉️"], Luxury: ["#1e293b", "#94a3b8", "🏨"], Nature: ["#0369a1", "#7dd3fc", "🏔️"],
+};
+export const locationImages = {
+  "Kathmandu Valley": "https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=1200&q=80",
+  Annapurna: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+  Pokhara: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80",
+  "Chitwan National Park": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80",
+  Lumbini: "https://images.unsplash.com/photo-1564053489984-317bbd824340?auto=format&fit=crop&w=1200&q=80",
+  Nagarkot: "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=80",
+  Mugu: "https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1200&q=80",
+  Khumbu: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+  Langtang: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+  Mustang: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+  "Bardia National Park": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80",
+  Bandipur: "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=80",
+  Ilam: "https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1200&q=80",
+  Gokyo: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+};
+const p = (id, title, category, location, days, price, difficulty, rating, summary, highlights, itinerary) =>
+  ({ id, title, category, location, days, price, difficulty, rating, summary, highlights, itinerary });
+export const packages = [
+  p(1, "Kathmandu Heritage Walk", "Culture", "Kathmandu Valley", 3, 180, "Easy", 4.7, "Three days through the old squares, stupas and living traditions of the valley.",
+    ["Durbar Square", "Swayambhunath", "Bhaktapur", "Local food tour"], ["Arrive, Thamel and Patan", "Pashupati and Boudha", "Bhaktapur and Changu Narayan"]),
+  p(2, "Annapurna Base Camp Trek", "Trekking", "Annapurna", 10, 950, "Hard", 4.9, "The classic trail into a ring of 7,000 m peaks, through rhododendron forest and Gurung villages.",
+    ["Poon Hill sunrise", "Hot springs at Jhinu", "Annapurna sanctuary", "Teahouse stays"], ["Pokhara to Nayapul", "Ghandruk", "Chhomrong", "Himalaya", "Machhapuchhre Base Camp", "Annapurna Base Camp", "Descend to Bamboo", "Jhinu hot springs", "Ghandruk", "Return to Pokhara"]),
+  p(3, "Pokhara Paragliding Weekend", "Adventure", "Pokhara", 2, 220, "Medium", 4.8, "Fly over Phewa Lake with Himalayan views, then slow down on the lakeside.",
+    ["Tandem paragliding", "Boating on Phewa", "Sarangkot sunrise"], ["Arrive and lakeside walk", "Sarangkot flight and departure"]),
+  p(4, "Chitwan Jungle Safari", "Wildlife", "Chitwan National Park", 4, 340, "Easy", 4.6, "Jeep safari, canoe rides and bird walks in the home of one-horned rhinos.",
+    ["Rhino spotting", "Canoe ride", "Tharu cultural show", "Bird watching"], ["Drive to Sauraha", "Jeep safari", "Canoe and jungle walk", "Return"]),
+  p(5, "Lumbini Pilgrimage", "Spiritual", "Lumbini", 3, 260, "Easy", 4.5, "Visit the birthplace of the Buddha, with monasteries from around the world.",
+    ["Maya Devi Temple", "Monastic Zone", "Peace Pagoda"], ["Arrive Lumbini", "Sacred Garden and monasteries", "Peace Pagoda, depart"]),
+  p(6, "Himalayan Luxury Retreat", "Luxury", "Nagarkot", 5, 1400, "Easy", 4.9, "Boutique lodges, spa days and private guides above the valley.",
+    ["Private guide", "Spa treatments", "Sunrise over Everest range", "Chef's dinners"], ["Private transfer", "Nagarkot sunrise", "Spa day", "Heritage village visit", "Departure"]),
+  p(7, "Rara Lake Escape", "Nature", "Mugu", 7, 780, "Medium", 4.7, "Nepal's largest lake, high in the far west, ringed by pine forest and quiet.",
+    ["Rara National Park", "Pine forest walks", "Remote villages"], ["Fly to Nepalgunj", "Fly to Talcha", "Rara Lake", "Lake circuit", "Murma Top", "Fly back", "Return"]),
+  p(8, "Everest Base Camp Trek", "Trekking", "Khumbu", 14, 1450, "Hard", 4.9, "Walk to the foot of the world's highest peak through Sherpa country.",
+    ["Namche Bazaar", "Tengboche monastery", "Kala Patthar", "Everest Base Camp"], ["Fly to Lukla", "Namche", "Acclimatise", "Tengboche", "Dingboche", "Lobuche", "Base Camp", "Kala Patthar", "Descend", "Namche", "Lukla", "Kathmandu"]),
+  p(9, "Langtang Valley Trek", "Trekking", "Langtang", 8, 720, "Medium", 4.8, "Follow mountain trails through Tamang villages and forests into the high alpine valley beneath Langtang Lirung.",
+    ["Kyanjin Gompa", "Langtang glaciers", "Tamang heritage villages", "Mountain and forest trails"], ["Drive from Kathmandu to Syabrubesi", "Trek to Lama Hotel", "Reach Langtang village", "Continue to Kyanjin Gompa", "Explore the valley and viewpoints", "Descend to Lama Hotel", "Trek to Syabrubesi", "Return to Kathmandu"]),
+  p(10, "Upper Mustang Culture Journey", "Culture", "Mustang", 10, 1680, "Hard", 4.8, "Explore the arid landscapes, cave country and walled settlements of Nepal's remote trans-Himalayan region.",
+    ["Walled city of Lo Manthang", "Trans-Himalayan scenery", "Cave and monastery visits", "Traditional Mustang villages"], ["Arrive in Kathmandu", "Travel to Pokhara", "Fly to Jomsom and drive to Kagbeni", "Travel through Chele and Ghami", "Visit Tsarang", "Explore Lo Manthang", "Visit nearby villages and monasteries", "Return to Jomsom", "Fly to Pokhara", "Return to Kathmandu"]),
+  p(11, "Bardia Wildlife Safari", "Wildlife", "Bardia National Park", 4, 460, "Easy", 4.7, "Spend time in Nepal's western lowland forests with guided wildlife drives, river scenery and local Tharu culture.",
+    ["Guided jeep safari", "Birdwatching", "Karnali River landscapes", "Tharu cultural experience"], ["Travel to Bardia and check in", "Orientation and village visit", "Full-day guided wildlife safari", "Morning nature walk and departure"]),
+  p(12, "Bandipur Hilltop Escape", "Nature", "Bandipur", 3, 290, "Easy", 4.6, "Slow down in a preserved Newari hill town with mountain views, heritage lanes and easy countryside walks.",
+    ["Bandipur bazaar", "Siddha Gufa cave", "Hillside viewpoints", "Newari architecture and cuisine"], ["Travel to Bandipur and explore the bazaar", "Visit Siddha Gufa and nearby viewpoints", "Enjoy a morning walk and depart"]),
+  p(13, "Ilam Tea Garden Retreat", "Nature", "Ilam", 4, 390, "Easy", 4.6, "Discover eastern Nepal's rolling tea gardens, quiet viewpoints and hill-town life at a relaxed pace.",
+    ["Ilam tea gardens", "Kanyam viewpoints", "Local tea tasting", "Eastern hill scenery"], ["Travel to Ilam and settle in", "Visit tea gardens and meet local producers", "Explore Kanyam and nearby viewpoints", "Enjoy a final morning in Ilam and depart"]),
+  p(14, "Gokyo Lakes Trek", "Trekking", "Gokyo", 12, 1390, "Hard", 4.9, "Trek through Sherpa country to the turquoise Gokyo Lakes and high viewpoints across the Everest region.",
+    ["Gokyo Lakes", "Gokyo Ri viewpoint", "Ngozumpa Glacier", "Sherpa villages"], ["Fly to Lukla and trek to Phakding", "Trek to Namche Bazaar", "Acclimatise in Namche", "Trek through Dole", "Reach Machhermo", "Arrive at Gokyo", "Explore the lakes and climb Gokyo Ri", "Return through Dole", "Trek to Namche", "Descend to Lukla", "Fly to Kathmandu", "Departure"]),
+];
